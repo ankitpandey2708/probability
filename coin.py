@@ -10,9 +10,9 @@ def prob_heads(coin_heads,k):
  
 target = open("coinsim.txt", 'w+')
  
-k = int(input("\n\n\nHow many times you want to flip the coin? > "))
+k = input("\n\n\nHow many times you want to flip the coin? = ")
  
-l = int(input("\n\n\nHow many times you want to conduct this experiment? > "))
+l = input("\n\n\nHow many times you want to conduct this experiment? = ")
  
 experimentdone = 1
  
