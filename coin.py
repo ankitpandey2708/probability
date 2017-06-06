@@ -1,9 +1,6 @@
 import random
-import numpy as np
 import matplotlib.pyplot as plt
- 
-print("\nCoin Flip Simulator by AKP")
- 
+
 def prob_heads(coin_heads,k):
         prob = float(coin_heads)/float(k)
         return prob
