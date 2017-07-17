@@ -18,7 +18,7 @@ while i < l+1:
                         coin_tails += 1
                 timesflipped += 1
         print("Out of %d flips, "%k + str(coin_heads) + " were heads and " + str(coin_tails) + " were tails.")
-        prob=float(coin_heads)/float(k)
+        prob=coin_heads/k
         a=[i,prob]
         for j in range(0,l):
                 x.append(a[0])
