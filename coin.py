@@ -4,10 +4,6 @@ import matplotlib.pyplot as plt
 k = int(input("No of times you want to flip the coin = ")) 
 l = int(input("No of times you want to conduct this experiment = "))
 
-def prob_heads(coin_heads,k):
-        prob = float(coin_heads)/float(k)
-        return prob
- 
 i = 1
 x = []
 y = []
@@ -22,7 +18,8 @@ while i < l+1:
                         coin_tails += 1
                 timesflipped += 1
         print("Out of %d flips, "%k + str(coin_heads) + " were heads and " + str(coin_tails) + " were tails.")
-        a=[i,prob_heads(coin_heads,k)]
+        prob=float(coin_heads)/float(k)
+        a=[i,prob]
         for j in range(0,l):
                 x.append(a[0])
                 y.append(a[1])
